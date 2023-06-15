@@ -30,6 +30,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ApertureResVermeer \
     FrameworkResOverlayVermeer \
+    NfcOverlayVermeer \
     SettingsOverlayVermeer \
     SettingsOverlayVermeerPOCO \
     SettingsOverlayVermeerRedmi \
