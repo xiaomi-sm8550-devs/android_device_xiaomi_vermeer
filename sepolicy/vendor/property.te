@@ -1,0 +1,6 @@
+# Displayfeature
+vendor_public_prop(vendor_displayfeature_prop)
+
+# Sensors
+vendor_public_prop(vendor_cct_prop)
+vendor_public_prop(vendor_parsedalgo_prop)
