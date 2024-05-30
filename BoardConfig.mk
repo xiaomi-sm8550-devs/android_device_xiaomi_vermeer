@@ -30,3 +30,6 @@ TARGET_OTA_ASSERT_DEVICE := vermeer
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
+
+# Sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor

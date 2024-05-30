@@ -475,4 +475,7 @@
         black in software (to avoid aliasing or emulate a cutout that is not physically existent).
         -->
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
+
+    <!-- Type of the tap sensor. Empty if tap is not supported. -->
+    <string name="config_dozeTapSensorType" translatable="false">org.lineageos.sensor.single_tap</string>
 </resources>
