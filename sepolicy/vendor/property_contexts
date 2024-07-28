@@ -1,3 +1,0 @@
-# Sensors
-persist.vendor.sensors.parsedalgo.              u:object_r:vendor_parsedalgo_prop:s0
-persist.vendor.trigger.cct                      u:object_r:vendor_cct_prop:s0
