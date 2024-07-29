@@ -1,0 +1,8 @@
+# Global model
+bluetooth.device.default_name=POCO F6 Pro
+vendor.usb.product_string=POCO F6 Pro
+ro.product.odm.brand=POCO
+ro.product.odm.device=vermeer
+ro.product.odm.manufacturer=Xiaomi
+ro.product.odm.model=23113RKC6G
+ro.product.odm.name=vermeer_global

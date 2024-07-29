@@ -5,3 +5,6 @@ persist.vendor.fingerprint.sensor_location=720|2882|124
 ro.vendor.sensors.xiaomi.double_tap=true
 ro.vendor.sensors.xiaomi.single_tap=true
 ro.vendor.sensors.xiaomi.udfps=true
+
+# System properties
+ro.product.property_source_order=odm,vendor,product,system_ext,system

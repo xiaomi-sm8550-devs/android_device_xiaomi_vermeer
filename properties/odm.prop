@@ -5,3 +5,6 @@ persist.sys.miui_resolution=1440x3200
 # Fingerprint
 persist.vendor.sys.fp.fod.location.X_Y=596,2758
 persist.vendor.sys.fp.fod.size.width_height=248,248
+
+# Model-specific properties
+import /odm/etc/build_${ro.boot.hwc}.prop
