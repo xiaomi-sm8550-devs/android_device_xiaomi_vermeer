@@ -26,3 +26,4 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD += \
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
