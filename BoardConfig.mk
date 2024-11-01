@@ -23,3 +23,6 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD += \
         wl2868c.ko \
         wl2866d.ko \
         xiaomi_touch.ko
+
+# Properties
+TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
