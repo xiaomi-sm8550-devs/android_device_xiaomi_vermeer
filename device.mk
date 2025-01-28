@@ -19,6 +19,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.vermeer.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vermeer.rc \
 
+# IFAAService
+PRODUCT_PACKAGES += \
+    IFAAService
+
 # Overlay
 PRODUCT_PACKAGES += \
     ApertureResVermeer \
