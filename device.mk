@@ -33,6 +33,10 @@ PRODUCT_PACKAGES += \
     WifiResVermeerPOCO \
     WifiResVermeerRedmi
 
+# Sensors
+PRODUCT_PACKAGES += \
+    sensors.qsh_wrapper
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
