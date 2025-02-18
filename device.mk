@@ -13,7 +13,9 @@ $(call inherit-product, vendor/xiaomi/vermeer/vermeer-vendor.mk)
 # Overlay
 PRODUCT_PACKAGES += \
     SettingsProviderResVermeerPOCO \
-    SettingsProviderResVermeerRedmi
+    SettingsProviderResVermeerRedmi \
+    WifiResVermeerPOCO \
+    WifiResVermeerRedmi
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
