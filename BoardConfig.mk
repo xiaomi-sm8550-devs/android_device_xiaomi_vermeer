@@ -24,6 +24,9 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD += \
         wl2866d.ko \
         xiaomi_touch.ko
 
+# OTA assert
+TARGET_OTA_ASSERT_DEVICE := vermeer
+
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
