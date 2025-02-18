@@ -29,8 +29,14 @@ namespace_imports = [
     'vendor/xiaomi/sm8550-common',
 ]
 
+def lib_fixup_odm_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}-{partition}' if partition == 'odm' else None
+
 lib_fixups: lib_fixups_user_type = {
     libs_proto_3_9_1: lib_fixup_vendorcompat,
+    (
+        'sqlite3',
+    ): lib_fixup_odm_suffix,
 }
 
 blob_fixups: blob_fixups_user_type = {
