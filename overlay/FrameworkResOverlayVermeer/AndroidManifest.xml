@@ -5,12 +5,11 @@
 -->
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.providers.settings.overlay.vermeer.redmi">
+    package="org.lineageos.frameworkresoverlay.vermeer">
     <application android:hasCode="false" />
     <overlay
         android:isStatic="true"
-        android:priority="750"
-        android:targetPackage="com.android.providers.settings"
-        android:requiredSystemPropertyName="ro.boot.hwc"
-        android:requiredSystemPropertyValue="CN" />
+        android:priority="1"
+        android:targetPackage="android" 
+        android:targetName="VermeerFrameworkResOverlay" />
 </manifest>

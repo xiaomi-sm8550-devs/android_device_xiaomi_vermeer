@@ -12,8 +12,13 @@ $(call inherit-product, vendor/xiaomi/vermeer/vermeer-vendor.mk)
 
 # Overlay
 PRODUCT_PACKAGES += \
+    FrameworkResOverlayVermeer \
+    SettingsOverlayVermeer \
+    SettingsOverlayVermeerPOCO \
+    SettingsOverlayVermeerRedmi \
     SettingsProviderResVermeerPOCO \
     SettingsProviderResVermeerRedmi \
+    SystemUIOverlayVermeer \
     WifiResVermeerPOCO \
     WifiResVermeerRedmi
 

@@ -6,11 +6,11 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.providers.settings.overlay.vermeer.poco">
-
+    <application android:hasCode="false" />
     <overlay
         android:isStatic="true"
-        android:priority="801"
+        android:priority="800"
         android:targetPackage="com.android.providers.settings"
-        android:requiredSystemPropertyName="ro.product.model"
-        android:requiredSystemPropertyValue="23113RKC6G" />
+        android:requiredSystemPropertyName="ro.boot.hwc"
+        android:requiredSystemPropertyValue="GL" />
 </manifest>

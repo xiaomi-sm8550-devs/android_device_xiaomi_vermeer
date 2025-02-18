@@ -5,12 +5,12 @@
 -->
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.providers.settings.overlay.vermeer.redmi">
+    package="org.lineageos.settingsoverlay.vermeer.poco">
     <application android:hasCode="false" />
     <overlay
         android:isStatic="true"
-        android:priority="750"
-        android:targetPackage="com.android.providers.settings"
+        android:priority="800"
+        android:targetPackage="com.android.settings"
         android:requiredSystemPropertyName="ro.boot.hwc"
-        android:requiredSystemPropertyValue="CN" />
+        android:requiredSystemPropertyValue="GL" />
 </manifest>
