@@ -12,6 +12,9 @@ include vendor/xiaomi/vermeer/BoardConfigVendor.mk
 
 DEVICE_PATH := device/xiaomi/vermeer
 
+# Display
+TARGET_SCREEN_DENSITY := 530
+
 # Kernel
 BOARD_VENDOR_KERNEL_MODULES_LOAD += \
 	aw882xx_dlkm.ko \
