@@ -10,6 +10,11 @@ $(call inherit-product, device/xiaomi/sm8550-common/common.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/vermeer/vermeer-vendor.mk)
 
+# Overlay
+PRODUCT_PACKAGES += \
+    SettingsProviderResVermeerPOCO \
+    SettingsProviderResVermeerRedmi
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
