@@ -54,6 +54,10 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .strip_debug_sections(),
     (
+        'odm/etc/camera/mihal_overlap/overlap_config.json'
+    ): blob_fixup()
+        .regex_replace('com.instagram.android', ''),
+    (
         'odm/lib64/libcamxcommonutils.so',
         'odm/lib64/hw/com.qti.chi.override.so',
         'odm/lib64/libchifeature2.so',
