@@ -6,13 +6,13 @@ odm/etc/acdbdata/Tutu/Tutu_acdb_cal.acdb:vendor/etc/acdbdata/kalama_mtp/Tutu_acd
 odm/etc/acdbdata/Tutu/Tutu_workspaceFileXml.qwsp:vendor/etc/acdbdata/kalama_mtp/Tutu_workspaceFileXml.qwsp
 
 # ADSP Modules
-odm/lib/rfsa/adsp/libarcsoft_beauty_hvx_skel.so
-odm/lib/rfsa/adsp/libmialgo_mc_bokeh_cdsp_skel.so
-odm/lib/rfsa/adsp/libmialgo_rawhdr_cdsp_skel.so
 odm/lib/rfsa/adsp/libaisupernight_ellc_cdsp_skel.so
+odm/lib/rfsa/adsp/libarcsoft_beauty_hvx_skel.so
 odm/lib/rfsa/adsp/libmialgo_ai_process_cdsp_skel.so
 odm/lib/rfsa/adsp/libmialgo_bokeh_depth_cdsp_skel.so
 odm/lib/rfsa/adsp/libmialgo_ell_cdsp_skel.so
+odm/lib/rfsa/adsp/libmialgo_mc_bokeh_cdsp_skel.so
+odm/lib/rfsa/adsp/libmialgo_rawhdr_cdsp_skel.so
 odm/lib/rfsa/adsp/libmialgo_supernight_capture_cdsp_skel.so
 odm/mount/camera/lib/rfsa/adsp/bm3a68v08s11n29.bin:vendor/lib/rfsa/adsp/bm3a68v08s11n29.bin
 odm/mount/camera/lib/rfsa/adsp/bm3a68v08s11n30.bin:vendor/lib/rfsa/adsp/bm3a68v08s11n30.bin
@@ -86,10 +86,10 @@ odm/mount/camera/lib/rfsa/adsp/libhdr_cdsp_skel.so:vendor/lib/rfsa/adsp/libhdr_c
 odm/mount/camera/lib/rfsa/adsp/libhdr_skel.so:vendor/lib/rfsa/adsp/libhdr_skel.so
 odm/mount/camera/lib/rfsa/adsp/libmctfengine_skel.so:vendor/lib/rfsa/adsp/libmctfengine_skel.so
 odm/mount/camera/lib/rfsa/adsp/libmialgo_basic_cdsp_skel.so:vendor/lib/rfsa/adsp/libmialgo_basic_cdsp_skel.so
+odm/mount/camera/lib/rfsa/adsp/libmialgo_bokeh_effect_cdsp_skel.so:vendor/lib/rfsa/adsp/libmialgo_bokeh_effect_cdsp_skel.so
 odm/mount/camera/lib/rfsa/adsp/libmialgo_ldc_cdsp_skel.so:vendor/lib/rfsa/adsp/libmialgo_ldc_cdsp_skel.so
 odm/mount/camera/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so:vendor/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so
 odm/mount/camera/lib/rfsa/adsp/libmialgo_slow_motion_cdsp_skel.so:vendor/lib/rfsa/adsp/libmialgo_slow_motion_cdsp_skel.so
-odm/mount/camera/lib/rfsa/adsp/libmialgo_bokeh_effect_cdsp_skel.so:vendor/lib/rfsa/adsp/libmialgo_bokeh_effect_cdsp_skel.so
 vendor/lib/rfsa/adsp/capi_cirrus_sp.so
 vendor/lib/rfsa/adsp/chre_qsh_shim.so
 vendor/lib/rfsa/adsp/hrtf5c.bin
@@ -804,7 +804,6 @@ odm/lib64/libmmcamera_mfnr_t4.so
 odm/lib64/libmmcamera_pdpc.so
 odm/lib64/libmorpho_ubwc.so
 odm/lib64/libmorpho_video_stabilizer.so
-odm/lib64/libsdr2hdr.so
 odm/lib64/libmpbase.so
 odm/lib64/libofflinedebugdata.so
 odm/lib64/libofflinefeatureintf.so
@@ -822,6 +821,7 @@ odm/lib64/librawnrv2_shared.so
 odm/lib64/libremosaic_wrapper.so
 odm/lib64/libremosaiclib.so
 odm/lib64/librfs_warp.so
+odm/lib64/libsdr2hdr.so
 odm/lib64/libsfeShiftExtrapolation.so
 odm/lib64/libshadowhook.so
 odm/lib64/libsupermoon.so
@@ -872,22 +872,22 @@ vendor/lib64/libbitmlenginev2.so
 vendor/lib64/libcalculator.so
 vendor/lib64/libcalculator_htp.so
 vendor/lib64/libcamxexternalformatutils.so
+vendor/lib64/libeyecare.so
 vendor/lib64/libhta_hexagon_runtime_snpe.so
+vendor/lib64/libmi-stc-HW-modulate.so
+vendor/lib64/libmiSensorCtrl.so
+vendor/lib64/libmi_dspp.so
 vendor/lib64/libmicuttlefish_fs.so
 vendor/lib64/libmivsock_utils.so
 vendor/lib64/libos.so
-vendor/lib64/libmi-stc-HW-modulate.so
-vendor/lib64/libmiSensorCtrl.so
-vendor/lib64/libeyecare.so 
 vendor/lib64/libquickcamera.so
 vendor/lib64/libsnpe_config.so;DISABLE_CHECKELF
 vendor/lib64/libsynx.so
 vendor/lib64/libthreadutils.so
-vendor/lib64/libmi_dspp.so
+vendor/lib64/vendor.xiaomi.hardware.aon-V1-ndk.so
 vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.miface@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.quickcamera@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.aon-V1-ndk.so
 
 # Camera components
 odm/lib64/camera/components/com.bots.node.vendortagwrite.so
@@ -1086,13 +1086,12 @@ odm/etc/mdss_dsi_n11_42_02_0a_dsc_cmd_mi.xml
 
 # Display (Config)
 product/etc/displayconfig/display_id_4630946738963277955.xml:vendor/etc/displayconfig/display_id_4630946738963277955.xml
-vendor/etc/clstc_config_library.xml
 vendor/etc/display/3dlut-pt-onnx-ptq-htp-fp16.dlc
 vendor/etc/displayconfig/display_layout_configuration.xml
+vendor/etc/clstc_config_library.xml
 vendor/etc/snapdragon_color_libs_config.xml
 
 # Display calibration data
-odm/etc/df_default.xml
 odm/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/cct_pcc.txt
 odm/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/miLutInfo.txt
 odm/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/miLut_0.txt
@@ -1120,6 +1119,7 @@ odm/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/mi_gc_0.txt
 odm/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/mi_gc_1.txt
 odm/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/mi_gc_2.txt
 odm/etc/disp0/mdss_dsi_n11_42_02_0a_dsc_cmd/mi_gc_3.txt
+odm/etc/df_default.xml
 vendor/etc/df_default.xml
 
 # Fingerprint
@@ -1202,9 +1202,9 @@ odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice@2.0-service.xml
 odm/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so
 
 # Sensors - SSC calibration
-odm/lib64/libssccalapi@2.0.so
 odm/lib64/libclient2slpi.notifier.so
 odm/lib64/libsensor_cal@2.0.so
+odm/lib64/libssccalapi@2.0.so
 
 # Sensor Communicate
 odm/bin/hw/vendor.xiaomi.sensor.communicate@1.0-service
