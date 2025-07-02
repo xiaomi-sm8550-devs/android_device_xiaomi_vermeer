@@ -21,4 +21,4 @@ PRODUCT_MODEL := 23113RKC6G
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildFingerprint=POCO/vermeer_global/vermeer:15/AQ3A.240912.001/OS2.0.103.0.VNKMIXM:user/release-keys
+    BuildFingerprint=POCO/vermeer_global/vermeer:15/AQ3A.240912.001/OS2.0.201.0.VNKMIXM:user/release-keys
