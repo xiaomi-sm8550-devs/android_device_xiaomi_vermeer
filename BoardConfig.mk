@@ -24,6 +24,9 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD += \
     wl2866d.ko \
     xiaomi_touch.ko
 
+BOOT_KERNEL_MODULES += \
+    goodix_core.ko
+
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := vermeer
 
