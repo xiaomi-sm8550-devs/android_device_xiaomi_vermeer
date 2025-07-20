@@ -8,7 +8,7 @@
     <dimen name="keyguard_indication_margin_bottom">500px</dimen>
 
     <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">26.0px</dimen>
+    <dimen name="status_bar_padding_top">13.0px</dimen>
 
     <!-- the padding on the start of the statusbar -->
     <dimen name="status_bar_padding_start">4dp</dimen>
@@ -20,7 +20,7 @@
     <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height</dimen>
 
     <!-- Adjust the icon padding in status bar for rounded corners. -->
-    <dimen name="rounded_corner_content_padding">72.0px</dimen>
+    <dimen name="rounded_corner_content_padding">67.0px</dimen>
 
     <!-- Location on the screen of the center of the physical power button. -->
     <dimen name="physical_power_button_center_screen_location_y">1460px</dimen>
