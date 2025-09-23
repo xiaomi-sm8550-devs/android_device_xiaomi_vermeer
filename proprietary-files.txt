@@ -1242,10 +1242,7 @@ vendor/etc/thermald-devices.conf
 
 # Touch firmware
 odm/firmware/goodix_cfg_group_vermeer.bin
-odm/firmware/goodix_cfg_group_vermeer_SelfDis.bin
 odm/firmware/goodix_firmware_vermeer.bin
-odm/firmware/goodix_test_limits_255.csv
-odm/firmware/vermeer_thp_config.ini
 
 # Vibrator firmware
 odm/firmware/0_click_P_RTP.bin:vendor/etc/vibrator/effect_0.bin
