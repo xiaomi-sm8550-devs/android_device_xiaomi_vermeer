@@ -1133,6 +1133,23 @@ odm/etc/sensors/config/sx937x_reg_0.json
 vendor/etc/sensors/config/chre_dynamic_sensors.json
 vendor/etc/sensors/sns_reg_config
 
+# Sensors (CIT)
+odm/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service
+odm/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc
+odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice@2.0-service.xml
+odm/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so
+
+# Sensors - SSC calibration
+odm/lib64/libssccalapi@2.0.so
+odm/lib64/libclient2slpi.notifier.so
+odm/lib64/libsensor_cal@2.0.so
+
+# Sensor Communicate
+odm/bin/hw/vendor.xiaomi.sensor.communicate@1.0-service
+odm/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc
+odm/etc/vintf/manifest/vendor.xiaomi.sensor.communicate@1.0_manifest.xml
+vendor/lib64/vendor.xiaomi.sensor.communicate@1.0.so
+
 # Thermal configs
 odm/etc/setting.xml
 odm/etc/thermal-4k.conf
