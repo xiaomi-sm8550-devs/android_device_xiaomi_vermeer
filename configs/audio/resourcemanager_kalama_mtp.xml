@@ -175,7 +175,7 @@
                     <snd_device_name>handset-mic</snd_device_name>
                 </custom-config>
                 <custom-config key="va-mic-enroll">
-                    <channels>1</channels>
+                    <channels>2</channels>
                     <samplerate>16000</samplerate>
                     <snd_device_name>va-mic-enroll</snd_device_name>
                 </custom-config>
@@ -696,7 +696,7 @@
             <speaker_protection_enabled>0</speaker_protection_enabled>
             <fractional_sr>0</fractional_sr>
             <!-- To enable external EC reference the flag extec_ref_enabled must be added as 1 -->
-            <ext_ec_ref_enabled>1</ext_ec_ref_enabled>
+            <ext_ec_ref_enabled>0</ext_ec_ref_enabled>
             <cps_enabled>0</cps_enabled>
             <vbat_enabled>0</vbat_enabled>
             <!--specify the supported bit format on speaker end point -->
