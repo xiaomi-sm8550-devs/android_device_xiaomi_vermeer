@@ -17,12 +17,12 @@ TARGET_SCREEN_DENSITY := 530
 
 # Kernel
 BOARD_VENDOR_KERNEL_MODULES_LOAD += \
-	aw882xx_dlkm.ko \
-	goodix_fod.ko \
-	goodix_core.ko \
-        wl2868c.ko \
-        wl2866d.ko \
-        xiaomi_touch.ko
+    aw882xx_dlkm.ko \
+    goodix_fod.ko \
+    goodix_core.ko \
+    wl2868c.ko \
+    wl2866d.ko \
+    xiaomi_touch.ko
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := vermeer
