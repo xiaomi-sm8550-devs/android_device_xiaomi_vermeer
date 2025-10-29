@@ -1041,8 +1041,11 @@ odm/lib64/camera/com.qti.tuned.vermeer_aac_gc16b3_front_ii.bin
 odm/lib64/camera/com.qti.tuned.vermeer_aac_ov16a1q_front.bin
 odm/lib64/camera/com.qti.tuned.vermeer_aac_ovx8000_wide_ii.bin
 odm/lib64/camera/com.qti.tuned.vermeer_ofilm_gc02m1_macro.bin
+odm/lib64/camera/com.qti.tuned.vermeer_ofilm_gc02m1_macro_light_ii.bin|00b0c97c79528c69616783ea75a7cfb2024241a2
 odm/lib64/camera/com.qti.tuned.vermeer_ofilm_imx355_ultra.bin
+odm/lib64/camera/com.qti.tuned.vermeer_ofilm_imx355_ultra_light_ii.bin|3ecad4978b6bff03e596c3c68e9aa5d5d69b3e0e
 odm/lib64/camera/com.qti.tuned.vermeer_ofilm_ovx8000_wide_i.bin
+odm/lib64/camera/com.qti.tuned.vermeer_ofilm_ovx8000_wide_i_light_ii.bin|b5082f05a336240252c0711e9533250a05e3de89
 odm/lib64/camera/fdconfigpreview.bin
 odm/lib64/camera/fdconfigpreviewlite.bin
 odm/lib64/camera/fdconfigsecure.bin
