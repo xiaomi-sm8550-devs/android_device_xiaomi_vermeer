@@ -42,32 +42,22 @@ lib_fixups: lib_fixups_user_type = {
 sensor_simbol = b'_ZN13DisplayConfig10ClientImpl4InitENSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPNS_14ConfigCallbackE\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
 
 blob_fixups: blob_fixups_user_type = {
-    (
-        'odm/etc/camera/enhance_motiontuning.xml',
-        'odm/etc/camera/night_motiontuning.xml',
-        'odm/etc/camera/motiontuning.xml'
-    ): blob_fixup()
+    ('odm/etc/camera/enhance_motiontuning.xml',
+     'odm/etc/camera/night_motiontuning.xml',
+     'odm/etc/camera/motiontuning.xml'): blob_fixup()
         .regex_replace('xml=version', 'xml version'),
-    (
-        'odm/lib64/libxmi_high_dynamic_range_cdsp.so',
-        'odm/lib64/libailab_rawhdr.so'
-    ): blob_fixup()
+    ('odm/lib64/libxmi_high_dynamic_range_cdsp.so',
+     'odm/lib64/libailab_rawhdr.so'): blob_fixup()
         .strip_debug_sections(),
-    (
-        'odm/etc/camera/mihal_overlap/overlap_config.json'
-    ): blob_fixup()
+    'odm/etc/camera/mihal_overlap/overlap_config.json': blob_fixup()
         .regex_replace('com.instagram.android', ''),
-    (
-        'odm/lib64/libcamxcommonutils.so',
-        'odm/lib64/hw/com.qti.chi.override.so',
-        'odm/lib64/libchifeature2.so',
-        'odm/lib64/libmialgoengine.so'
-    ): blob_fixup()
+    ('odm/lib64/libcamxcommonutils.so',
+     'odm/lib64/hw/com.qti.chi.override.so',
+     'odm/lib64/libchifeature2.so',
+     'odm/lib64/libmialgoengine.so'): blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
-    (
-        'odm/lib64/libalLDC.so',
-        'odm/lib64/libalAILDC.so'
-    ): blob_fixup()
+    ('odm/lib64/libalLDC.so',
+     'odm/lib64/libalAILDC.so'): blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')
         .clear_symbol_version('AHardwareBuffer_lock')
@@ -89,12 +79,12 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_unlock'),
     'odm/lib64/libmorpho_ubwc.so': blob_fixup()
         .clear_symbol_version('AHardwareBuffer_describe'),
-    'odm/lib64/libwrapper_dlengine.so' : blob_fixup()
+    'odm/lib64/libwrapper_dlengine.so': blob_fixup()
         .add_needed('liblog.so'),
     'odm/lib64/hw/camera.xiaomi.so': blob_fixup()
         .add_needed('libprocessgroup_shim.so')
         .replace_needed('libui.so', 'libui-v34.so'),
-    'odm/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so' : blob_fixup()
+    'odm/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so': blob_fixup()
         .binary_regex_replace(b'_ZN13DisplayConfig10ClientImpl13ClientImplGetENSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPNS_14ConfigCallbackE', sensor_simbol)
 }
 
