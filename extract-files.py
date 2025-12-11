@@ -86,7 +86,13 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libprocessgroup_shim.so')
         .replace_needed('libui.so', 'libui-v34.so'),
     'odm/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so': blob_fixup()
-        .binary_regex_replace(b'_ZN13DisplayConfig10ClientImpl13ClientImplGetENSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPNS_14ConfigCallbackE', sensor_simbol)
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so')
+        .binary_regex_replace(b'_ZN13DisplayConfig10ClientImpl13ClientImplGetENSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPNS_14ConfigCallbackE', sensor_simbol),
+    ('odm/bin/hw/vendor.qti.camera.provider-service_64',
+     'odm/lib64/camx.provider-impl.so',
+     'odm/lib64/com.qti.feature2.anchorsync.so',
+     'odm/lib64/camera/plugins/com.xiaomi.plugin.anchor.so'): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
 }
 
 module = ExtractUtilsModule(
