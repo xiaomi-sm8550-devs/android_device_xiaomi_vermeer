@@ -4,6 +4,35 @@
 # ACDBs
 odm/etc/acdbdata/Tutu/Tutu_acdb_cal.acdb:vendor/etc/acdbdata/kalama_mtp/Tutu_acdb_cal.acdb
 odm/etc/acdbdata/Tutu/Tutu_workspaceFileXml.qwsp:vendor/etc/acdbdata/kalama_mtp/Tutu_workspaceFileXml.qwsp
+vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
+vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp
+vendor/etc/acdbdata/kalama_cdp/CDP_acdb_cal.acdb
+vendor/etc/acdbdata/kalama_cdp/CDP_workspaceFileXml.qwsp
+vendor/etc/acdbdata/kalama_grd/GRD_acdb_cal.acdb
+vendor/etc/acdbdata/kalama_grd/GRD_workspaceFileXml.qwsp
+vendor/etc/acdbdata/kalama_qrd/QRD_acdb_cal.acdb
+vendor/etc/acdbdata/kalama_qrd/QRD_workspaceFileXml.qwsp
+vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.7_enpu3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.6.5_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.6.5_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.5_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.8_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.2_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.3_0.0__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.0__eai_2.10_enpuv3.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__4.8.4_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_2.10_enpuv3.pmd
+vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd
+vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd
 
 # ADSP Modules
 odm/lib/rfsa/adsp/libaisupernight_ellc_cdsp_skel.so
@@ -536,7 +565,7 @@ odm/etc/camera/beauty_config_gl.json
 odm/etc/camera/beauty_config_gl_8g.json
 odm/etc/camera/beauty_style_nude.cng
 odm/etc/camera/bokehParams.json
-odm/etc/camera/camerabooster.json
+odm/etc/camera/cameradfx_config.json
 odm/etc/camera/camxoverridesettings.txt
 odm/etc/camera/com.xiaomi.dcal.wu.golden
 odm/etc/camera/com.xiaomi.dcal.wu.golden2
