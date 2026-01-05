@@ -1075,7 +1075,7 @@ odm/lib64/camera/com.qti.tuned.vermeer_ofilm_gc02m1_macro_light_ii.bin|00b0c97c7
 odm/lib64/camera/com.qti.tuned.vermeer_ofilm_imx355_ultra.bin
 odm/lib64/camera/com.qti.tuned.vermeer_ofilm_imx355_ultra_light_ii.bin|3ecad4978b6bff03e596c3c68e9aa5d5d69b3e0e
 odm/lib64/camera/com.qti.tuned.vermeer_ofilm_ovx8000_wide_i.bin
-odm/lib64/camera/com.qti.tuned.vermeer_ofilm_ovx8000_wide_i_light_ii.bin|b5082f05a336240252c0711e9533250a05e3de89
+odm/lib64/camera/com.qti.tuned.vermeer_ofilm_ovx8000_wide_i_light_ii.bin|b982058a91ff749b156de472aa8d198c0b60f6ba
 odm/lib64/camera/fdconfigpreview.bin
 odm/lib64/camera/fdconfigpreviewlite.bin
 odm/lib64/camera/fdconfigsecure.bin
