@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are taken from POCO F6 Pro / Redmi K70 AQ3A.240912.001 OS2.0.207.0.VNKMIXM
+## are taken from POCO F6 Pro / Redmi K70 BP2A.250605.031.A3 OS3.0.6.0.WNKMIXM
 
 # ACDBs
 odm/etc/acdbdata/Tutu/Tutu_acdb_cal.acdb:vendor/etc/acdbdata/kalama_mtp/Tutu_acdb_cal.acdb
@@ -537,6 +537,7 @@ odm/etc/camera/beauty_config_gl_8g.json
 odm/etc/camera/beauty_style_nude.cng
 odm/etc/camera/bokehParams.json
 odm/etc/camera/camerabooster.json
+odm/etc/camera/cameradfx_config.json
 odm/etc/camera/camxoverridesettings.txt
 odm/etc/camera/com.xiaomi.dcal.wu.golden
 odm/etc/camera/com.xiaomi.dcal.wu.golden2
@@ -672,6 +673,7 @@ odm/lib64/com.qualcomm.mcx.nonlinearmapper.so
 odm/lib64/com.qualcomm.mcx.policy.mfl.so
 odm/lib64/com.qualcomm.mcx.policy.xr.so
 odm/lib64/com.qualcomm.qti.mcx.usecase.extension.so
+odm/lib64/com.xiaomi.camdfx.so
 odm/lib64/com.xiaomi.camhal.overlap.so
 odm/lib64/com.xiaomi.camhal.submodel.camxfrag.so
 odm/lib64/com.xiaomi.camhal.submodel.chifrag.so
@@ -1041,17 +1043,19 @@ odm/lib64/camera/com.qti.tuned.vermeer_aac_gc16b3_front_ii.bin
 odm/lib64/camera/com.qti.tuned.vermeer_aac_ov16a1q_front.bin
 odm/lib64/camera/com.qti.tuned.vermeer_aac_ovx8000_wide_ii.bin
 odm/lib64/camera/com.qti.tuned.vermeer_ofilm_gc02m1_macro.bin
-odm/lib64/camera/com.qti.tuned.vermeer_ofilm_gc02m1_macro_light_ii.bin|00b0c97c79528c69616783ea75a7cfb2024241a2
 odm/lib64/camera/com.qti.tuned.vermeer_ofilm_imx355_ultra.bin
-odm/lib64/camera/com.qti.tuned.vermeer_ofilm_imx355_ultra_light_ii.bin|3ecad4978b6bff03e596c3c68e9aa5d5d69b3e0e
 odm/lib64/camera/com.qti.tuned.vermeer_ofilm_ovx8000_wide_i.bin
-odm/lib64/camera/com.qti.tuned.vermeer_ofilm_ovx8000_wide_i_light_ii.bin|b5082f05a336240252c0711e9533250a05e3de89
 odm/lib64/camera/fdconfigpreview.bin
 odm/lib64/camera/fdconfigpreviewlite.bin
 odm/lib64/camera/fdconfigsecure.bin
 odm/lib64/camera/fdconfigvideo.bin
 odm/lib64/camera/fdconfigvideolite.bin
 odm/lib64/camera/libchxlogicalcameratable.so
+
+# Camera sensors - Redmi K70 OS3.0.6.0.WNKNXM
+odm/lib64/camera/com.qti.tuned.vermeer_ofilm_gc02m1_macro_light_ii.bin|00b0c97c79528c69616783ea75a7cfb2024241a2
+odm/lib64/camera/com.qti.tuned.vermeer_ofilm_imx355_ultra_light_ii.bin|3ecad4978b6bff03e596c3c68e9aa5d5d69b3e0e
+odm/lib64/camera/com.qti.tuned.vermeer_ofilm_ovx8000_wide_i_light_ii.bin|b982058a91ff749b156de472aa8d198c0b60f6ba
 
 # Camera Firmware
 odm/firmware/CAMERA_ICP.b00
