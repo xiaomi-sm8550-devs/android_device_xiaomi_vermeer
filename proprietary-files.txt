@@ -680,7 +680,7 @@ odm/lib64/com.xiaomi.camhal.submodel.chifrag.so
 odm/lib64/com.xiaomi.drivermqs.so
 odm/lib64/com.xiaomi.immunesystem.so
 odm/lib64/libAF.so
-odm/lib64/libAncHumanVideoBokehV4.so;DISABLE_CHECKELF
+odm/lib64/libAncHumanVideoBokehV4.so
 odm/lib64/libHISCppAlgos.so
 odm/lib64/libMiMotion.so
 odm/lib64/libMiVideoFilter.so
@@ -883,7 +883,7 @@ vendor/lib64/libmicuttlefish_fs.so
 vendor/lib64/libmivsock_utils.so
 vendor/lib64/libos.so
 vendor/lib64/libquickcamera.so
-vendor/lib64/libsnpe_config.so;DISABLE_CHECKELF
+vendor/lib64/libsnpe_config.so
 vendor/lib64/libsynx.so
 vendor/lib64/libthreadutils.so
 vendor/lib64/vendor.xiaomi.hardware.aon-V1-ndk.so
