@@ -5,6 +5,7 @@
 #
 
 # Inherit from xiaomi sm8550-common
+TARGET_HAS_UDFPS := true
 $(call inherit-product, device/xiaomi/sm8550-common/common.mk)
 
 # Inherit from the proprietary version
