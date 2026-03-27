@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are taken from POCO F6 Pro / Redmi K70 BP2A.250605.031.A3 OS3.0.6.0.WNKMIXM
+## are taken from POCO F6 Pro / Redmi K70 BP2A.250605.031.A3 OS3.0.7.0.WNKMIXM
 
 # ACDBs
 odm/etc/acdbdata/Tutu/Tutu_acdb_cal.acdb:vendor/etc/acdbdata/kalama_mtp/Tutu_acdb_cal.acdb
@@ -445,13 +445,40 @@ odm/etc/camera/resources/render/GlobalConfig.json
 odm/etc/camera/resources/default_param.json
 odm/etc/camera/resources/truesight_param.json
 odm/etc/camera/resources/truesight_param_debug.json
+odm/etc/camera/videofilter/102_SummerDay.png
+odm/etc/camera/videofilter/103_Fantasy.png
+odm/etc/camera/videofilter/104_Meet.png
+odm/etc/camera/videofilter/105_WindSing.png
+odm/etc/camera/videofilter/106_Lost.png
+odm/etc/camera/videofilter/107_Central.png
+odm/etc/camera/videofilter/108_NorthernEurope.png
+odm/etc/camera/videofilter/109_Rome.png
 odm/etc/camera/videofilter/110_BlackGold.png
+odm/etc/camera/videofilter/111_GreenOrange.png
+odm/etc/camera/videofilter/112_CyberPunk.png
+odm/etc/camera/videofilter/113_BlackIce.png
+odm/etc/camera/videofilter/121_Bleach.png
+odm/etc/camera/videofilter/122_Thriller.png
+odm/etc/camera/videofilter/123_TealOrange.png
+odm/etc/camera/videofilter/124_JapaneseStyle.png
+odm/etc/camera/videofilter/125_Latin.png
+odm/etc/camera/videofilter/126_Fantasy2.png
+odm/etc/camera/videofilter/127_Creamy.png
+odm/etc/camera/videofilter/128_Sepia.png
 odm/etc/camera/videofilter/129_LeicaVivid.png
 odm/etc/camera/videofilter/130_LeicaNatural.png
 odm/etc/camera/videofilter/131_MonochromeTrue.png
 odm/etc/camera/videofilter/132_MonochromeHighContrast.png
 odm/etc/camera/videofilter/133_MonochromeBrown.png
 odm/etc/camera/videofilter/134_MonochromeBlue.png
+odm/etc/camera/videofilter/135_Classical.png
+odm/etc/camera/videofilter/136_Filene.png
+odm/etc/camera/videofilter/137_GreenNight.png
+odm/etc/camera/videofilter/138_LiteratureAndArt.png
+odm/etc/camera/videofilter/139_OrangeHoney.png
+odm/etc/camera/videofilter/140_Romance.png
+odm/etc/camera/videofilter/141_FR500.png
+odm/etc/camera/videofilter/142_FE250.png
 odm/etc/camera/videofilter/144_RedHero.png
 odm/etc/camera/videofilter/146_TactileGreen.png
 odm/etc/camera/videofilter/148_Mild.png
@@ -537,6 +564,7 @@ odm/etc/camera/beauty_config_gl_8g.json
 odm/etc/camera/beauty_style_nude.cng
 odm/etc/camera/bokehParams.json
 odm/etc/camera/camerabooster.json
+odm/etc/camera/cameracustomize.json
 odm/etc/camera/cameradfx_config.json
 odm/etc/camera/camxoverridesettings.txt
 odm/etc/camera/com.xiaomi.dcal.wu.golden
@@ -683,7 +711,7 @@ odm/lib64/libAF.so
 odm/lib64/libAncHumanVideoBokehV4.so
 odm/lib64/libHISCppAlgos.so
 odm/lib64/libMiMotion.so
-odm/lib64/libMiVideoFilter.so
+odm/lib64/libMiPhotoFilter.so
 odm/lib64/libTrueSight.so
 odm/lib64/libXMFaceFocus.so
 odm/lib64/libaidenoiser.so
@@ -1201,6 +1229,7 @@ vendor/etc/sensors/sns_reg_config
 
 # Sensors (CIT)
 odm/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service
+odm/etc/cit_param_config.json
 odm/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc
 odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice@2.0-service.xml
 odm/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so
