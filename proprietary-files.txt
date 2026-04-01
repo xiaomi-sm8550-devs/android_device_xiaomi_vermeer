@@ -851,7 +851,6 @@ odm/lib64/librawnrv2_shared.so
 odm/lib64/libremosaic_wrapper.so
 odm/lib64/libremosaiclib.so
 odm/lib64/librfs_warp.so
-odm/lib64/libsdr2hdr.so
 odm/lib64/libsfeShiftExtrapolation.so
 odm/lib64/libshadowhook.so
 odm/lib64/libsupermoon.so
@@ -860,7 +859,6 @@ odm/lib64/libtfestriping.so
 odm/lib64/libubifocus.so
 odm/lib64/libvideoBokeh.so
 odm/lib64/libvideoml.so
-odm/lib64/libvideomode.so
 odm/lib64/libvidhance.so
 odm/lib64/libvidhance_active_ois.so
 odm/lib64/libvidhance_face_stabilizer.so
@@ -889,8 +887,6 @@ vendor/lib64/camera/libPlatformValidatorShared.so;MODULE_SUFFIX=-camera
 vendor/lib64/hw/android.hardware.camera.provider@2.7-impl-vcamera.so
 vendor/lib64/hw/vendor.xiaomi.hardware.quickcamera@1.0-impl.so
 vendor/lib64/libPlatformValidatorShared.so
-vendor/lib64/libSNPE.so
-vendor/lib64/libSNPESample.so
 vendor/lib64/libSnpeDspV65Stub.so;FIX_SONAME
 vendor/lib64/libSnpeDspV66Stub.so;FIX_SONAME
 vendor/lib64/libSnpeHta.so;FIX_SONAME
@@ -902,10 +898,7 @@ vendor/lib64/libbitmlenginev2.so
 vendor/lib64/libcalculator.so
 vendor/lib64/libcalculator_htp.so
 vendor/lib64/libcamxexternalformatutils.so
-vendor/lib64/libeyecare.so
 vendor/lib64/libhta_hexagon_runtime_snpe.so
-vendor/lib64/libmi-stc-HW-modulate.so
-vendor/lib64/libmiSensorCtrl.so
 vendor/lib64/libmi_dspp.so
 vendor/lib64/libmicuttlefish_fs.so
 vendor/lib64/libmivsock_utils.so
