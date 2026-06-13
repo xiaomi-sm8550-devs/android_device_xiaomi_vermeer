@@ -1080,7 +1080,10 @@ odm/lib64/camera/fdconfigvideo.bin
 odm/lib64/camera/fdconfigvideolite.bin
 odm/lib64/camera/libchxlogicalcameratable.so
 
-# Camera sensors - Redmi K70 OS3.0.302.0.WNKCNXM
+# Camera - Redmi K70 OS3.0.303.0.WNKCNXM
+odm/etc/camera/mi_tuning/vermeer_ofilm_gc02m1_macro_light_ii.bin|7b7148798236ebcbc098a68c41e5b4349b36ac87
+odm/etc/camera/mi_tuning/vermeer_ofilm_imx355_ultra_light_ii.bin|afcdb9e61661efbb3d79d19322c74bbb6442ab2b
+odm/etc/camera/mi_tuning/vermeer_ofilm_ovx8000_wide_i_light_ii.bin|a8eb43601bed1190a744a3d10635fcc8a8cc04f1
 odm/lib64/camera/com.qti.tuned.vermeer_ofilm_gc02m1_macro_light_ii.bin|00b0c97c79528c69616783ea75a7cfb2024241a2
 odm/lib64/camera/com.qti.tuned.vermeer_ofilm_imx355_ultra_light_ii.bin|3ecad4978b6bff03e596c3c68e9aa5d5d69b3e0e
 odm/lib64/camera/com.qti.tuned.vermeer_ofilm_ovx8000_wide_i_light_ii.bin|b982058a91ff749b156de472aa8d198c0b60f6ba
