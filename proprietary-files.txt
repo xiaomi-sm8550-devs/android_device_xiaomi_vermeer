@@ -1238,7 +1238,6 @@ odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice@2.0-service.xml
 odm/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so
 
 # Sensors - SSC calibration
-odm/lib64/libclient2slpi.notifier.so
 odm/lib64/libsensor_cal@2.0.so
 odm/lib64/libssccalapi@2.0.so
 
