@@ -4,3 +4,8 @@ vendor_public_prop(vendor_displayfeature_prop)
 # Sensors
 vendor_public_prop(vendor_cct_prop)
 vendor_public_prop(vendor_parsedalgo_prop)
+
+# Touch feature
+vendor_restricted_prop(vendor_touch_hostprocess_prop)
+vendor_public_prop(vendor_panel_info_prop)
+vendor_restricted_prop(vendor_touchfeature_prop)

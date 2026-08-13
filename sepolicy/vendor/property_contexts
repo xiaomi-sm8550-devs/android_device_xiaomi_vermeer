@@ -1,3 +1,11 @@
 # Sensors
 persist.vendor.sensors.parsedalgo.              u:object_r:vendor_parsedalgo_prop:s0
 persist.vendor.trigger.cct                      u:object_r:vendor_cct_prop:s0
+
+# Touch feature
+persist.vendor.hostprocess.waterproof           u:object_r:vendor_touch_hostprocess_prop:s0
+persist.vendor.hostprocess.filmstatus           u:object_r:vendor_touch_hostprocess_prop:s0
+vendor.panel.                                    u:object_r:vendor_panel_info_prop:s0
+vendor.touchfeature.                             u:object_r:vendor_touchfeature_prop:s0
+ro.vendor.touchfeature.type                      u:object_r:vendor_touchfeature_prop:s0
+persist.vendor.touchfeature.                     u:object_r:vendor_touchfeature_prop:s0

@@ -1,0 +1,2 @@
+# Stock ODM build properties consumed by the Xiaomi touchfeature service.
+set_prop(vendor_init, vendor_touchfeature_prop)

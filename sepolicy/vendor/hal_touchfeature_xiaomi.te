@@ -1,0 +1,27 @@
+type hal_touchfeature_xiaomi_default, domain;
+type hal_touchfeature_xiaomi_default_exec, exec_type, file_type, vendor_file_type;
+type hal_touchfeature_xiaomi_hwservice, hwservice_manager_type;
+
+init_daemon_domain(hal_touchfeature_xiaomi_default)
+hal_server_domain(hal_touchfeature_xiaomi_default, hal_touchfeature_xiaomi)
+hwbinder_use(hal_touchfeature_xiaomi_default)
+add_hwservice(hal_touchfeature_xiaomi_server, hal_touchfeature_xiaomi_hwservice)
+
+allow hal_touchfeature_xiaomi_default touchfeature_device:chr_file rw_file_perms;
+allow hal_touchfeature_xiaomi_default uhid_device:chr_file rw_file_perms;
+allow hal_touchfeature_xiaomi_default input_device:dir r_dir_perms;
+allow hal_touchfeature_xiaomi_default input_device:chr_file rw_file_perms;
+allow hal_touchfeature_xiaomi_default sysfs_touch_hostprocess:file rw_file_perms;
+
+allow hal_touchfeature_xiaomi_default vendor_data_touchreport_file:dir create_dir_perms;
+allow hal_touchfeature_xiaomi_default vendor_data_touchreport_file:file create_file_perms;
+
+allow hal_touchfeature_xiaomi_default self:capability sys_nice;
+allow hal_touchfeature_xiaomi_default fwk_sensor_hwservice:hwservice_manager find;
+allow hal_touchfeature_xiaomi_default vendor_hal_perf_hwservice:hwservice_manager find;
+allow hal_touchfeature_xiaomi_default vendor_hal_perf_default:binder call;
+allow hal_touchfeature_xiaomi_default tpevent:unix_stream_socket connectto;
+binder_call(hal_touchfeature_xiaomi_default, system_server)
+
+set_prop(hal_touchfeature_xiaomi_default, vendor_touch_hostprocess_prop)
+set_prop(hal_touchfeature_xiaomi_default, vendor_touchfeature_prop)

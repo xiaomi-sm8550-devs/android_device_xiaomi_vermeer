@@ -15,6 +15,10 @@ DEVICE_PATH := device/xiaomi/vermeer
 # Display
 TARGET_SCREEN_DENSITY := 530
 
+# VINTF
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml
+
 # Kernel
 BOARD_VENDOR_KERNEL_MODULES_LOAD += \
     aw882xx_dlkm.ko \

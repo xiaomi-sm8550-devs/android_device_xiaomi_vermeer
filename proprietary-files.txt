@@ -1276,9 +1276,25 @@ vendor/etc/thermal-engine.conf
 vendor/etc/thermal-map.conf
 vendor/etc/thermald-devices.conf
 
+# Touchfeature
+odm/bin/hw/vendor.xiaomi.hw.touchfeature@1.0-service
+odm/bin/touch_report_debug
+odm/bin/toucheventcheck
+odm/etc/init.panel_info.sh
+odm/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc
+odm/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature@1.0-service.xml
+odm/lib/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so
+odm/lib64/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so
+odm/lib64/libtensorflowlite_touch_c.so
+odm/lib64/libtouchreport.so
+odm/lib64/libtouchsensor.so
+vendor/lib/vendor.xiaomi.hw.touchfeature@1.0.so:odm/lib/vendor.xiaomi.hw.touchfeature@1.0.so;MODULE_SUFFIX=-odm
+vendor/lib64/vendor.xiaomi.hw.touchfeature@1.0.so:odm/lib64/vendor.xiaomi.hw.touchfeature@1.0.so;MODULE_SUFFIX=-odm
+
 # Touch firmware
 odm/firmware/goodix_cfg_group_vermeer.bin
 odm/firmware/goodix_firmware_vermeer.bin
+odm/firmware/vermeer_thp_config.ini
 
 # Vibrator firmware
 odm/firmware/0_click_P_RTP.bin:vendor/etc/vibrator/effect_0.bin

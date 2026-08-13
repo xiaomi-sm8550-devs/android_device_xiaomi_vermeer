@@ -1,0 +1,12 @@
+type vendor_touch_init_shell, domain;
+type vendor_touch_init_shell_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(vendor_touch_init_shell)
+
+allow vendor_touch_init_shell vendor_touch_init_shell_exec:file { read getattr map execute open execute_no_trans entrypoint };
+allow vendor_touch_init_shell vendor_shell_exec:file { read getattr map execute open execute_no_trans entrypoint };
+allow vendor_touch_init_shell vendor_toolbox_exec:file { read getattr map execute open execute_no_trans };
+allow vendor_touch_init_shell sysfs:file r_file_perms;
+
+set_prop(vendor_touch_init_shell, vendor_panel_info_prop)
+set_prop(vendor_touch_init_shell, vendor_touchfeature_prop)

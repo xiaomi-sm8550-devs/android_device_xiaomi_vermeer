@@ -2,3 +2,9 @@
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor.xiaomi.sensor.citsensorservice@1.1-service u:object_r:vendor_hal_citsensorservice_xiaomi_default_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service u:object_r:vendor_hal_citsensorservice_xiaomi_default_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor.xiaomi.sensor.communicate@1.0-service u:object_r:vendor_hal_sensorcommunicate_default_exec:s0
+
+# Touch feature
+/(odm|vendor/odm)/bin/hw/vendor\.xiaomi\.hw\.touchfeature@1\.0-service u:object_r:hal_touchfeature_xiaomi_default_exec:s0
+/(odm|vendor/odm)/bin/toucheventcheck u:object_r:tpevent_exec:s0
+/(odm|vendor/odm)/etc/init\.panel_info\.sh u:object_r:vendor_touch_init_shell_exec:s0
+/data/vendor/touch(/.*)? u:object_r:vendor_data_touchreport_file:s0

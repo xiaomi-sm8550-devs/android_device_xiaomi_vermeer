@@ -1,0 +1,4 @@
+# The Goodix fingerprint HAL reads the panel identity to select its optical
+# calibration and uses a private netlink socket for vendor event delivery.
+get_prop(hal_fingerprint_default, vendor_panel_info_prop)
+allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;

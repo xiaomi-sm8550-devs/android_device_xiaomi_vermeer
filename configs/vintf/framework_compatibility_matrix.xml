@@ -1,0 +1,14 @@
+<!--
+     Copyright (C) 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<compatibility-matrix version="1.0" type="framework">
+    <hal format="hidl">
+        <name>vendor.xiaomi.hw.touchfeature</name>
+        <version>1.0</version>
+        <interface>
+            <name>ITouchFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>

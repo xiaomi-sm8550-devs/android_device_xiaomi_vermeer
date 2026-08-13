@@ -6,3 +6,6 @@ attribute vendor_hal_citsensorservice_xiaomi_server;
 attribute vendor_hal_sensorcommunicate;
 attribute vendor_hal_sensorcommunicate_client;
 attribute vendor_hal_sensorcommunicate_server;
+
+# Touch feature
+hal_attribute(touchfeature_xiaomi)
