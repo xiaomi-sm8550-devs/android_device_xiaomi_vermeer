@@ -4,3 +4,11 @@ service citsensor-hal-2-0 /odm/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-
     group system input
     override
     task_profiles ServiceCapacityLow
+
+service touch_report /odm/bin/touch_report_debug
+    class hal
+    user system
+    group system uhid input
+    capabilities SYS_NICE
+    ioprio rt 4
+    seclabel u:r:touchreport:s0
