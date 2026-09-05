@@ -1,0 +1,5 @@
+service vendor.vermeer-touch-patch /vendor/bin/vermeer_touch_patch
+    class late_start
+    user root
+    group root system
+    restart_period 5

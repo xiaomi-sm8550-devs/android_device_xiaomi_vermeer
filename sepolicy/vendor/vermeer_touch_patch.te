@@ -1,0 +1,9 @@
+type vendor_vermeer_touch_patch, domain;
+type vendor_vermeer_touch_patch_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(vendor_vermeer_touch_patch)
+
+allow vendor_vermeer_touch_patch sysfs:dir search;
+allow vendor_vermeer_touch_patch sysfs_goodix_touch:dir r_dir_perms;
+allow vendor_vermeer_touch_patch sysfs_goodix_touch:file { getattr open read write };
+allow vendor_vermeer_touch_patch vendor_sysfs_touch:file { getattr open read write };

@@ -2,3 +2,6 @@
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor.xiaomi.sensor.citsensorservice@1.1-service u:object_r:vendor_hal_citsensorservice_xiaomi_default_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service u:object_r:vendor_hal_citsensorservice_xiaomi_default_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor.xiaomi.sensor.communicate@1.0-service u:object_r:vendor_hal_sensorcommunicate_default_exec:s0
+
+# Touch
+/(vendor|system/vendor)/bin/vermeer_touch_patch u:object_r:vendor_vermeer_touch_patch_exec:s0

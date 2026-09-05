@@ -23,6 +23,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.vermeer.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vermeer.rc
 
+# Touch
+PRODUCT_PACKAGES += \
+    vermeer_touch_patch
+
 # Overlay
 PRODUCT_PACKAGES += \
     ApertureResVermeer \
