@@ -16,10 +16,10 @@ namespace sensors {
 namespace V2_1 {
 namespace subhal {
 namespace implementation {
-namespace qsh_wrapper {
+namespace ssc_wrapper {
 
 namespace {
-constexpr auto kLibName = "sensors.qsh.so";
+constexpr auto kLibName = "sensors.ssc.so";
 };  // anonymous namespace
 
 SensorsSubHal::SensorsSubHal()
@@ -27,13 +27,23 @@ SensorsSubHal::SensorsSubHal()
           if (p) dlclose(p);
       }) {
     if (!lib_handle_) {
-        LOG(FATAL) << __func__ << ": dlopen " << kLibName << " failed, exiting";
+        LOG(FATAL) << __func__ << ": dlopen " << kLibName << " failed: " << dlerror();
     }
 
+    dlerror();
     auto get_sub_hal = reinterpret_cast<ISensorsSubHal* (*)(uint32_t*)>(
             dlsym(lib_handle_.get(), "sensorsHalGetSubHal_2_1"));
-    uint32_t version;
+    const char* error = dlerror();
+    if (error != nullptr || get_sub_hal == nullptr) {
+        LOG(FATAL) << "Cannot resolve sensorsHalGetSubHal_2_1: "
+                   << (error != nullptr ? error : "null symbol");
+    }
+    uint32_t version = 0;
     impl_ = get_sub_hal(&version);
+    if (impl_ == nullptr || version != SUB_HAL_2_1_VERSION) {
+        LOG(FATAL) << "Invalid SSC sub-HAL: implementation=" << impl_
+                   << ", version=" << version << ", expected=" << SUB_HAL_2_1_VERSION;
+    }
 }
 
 Return<Result> SensorsSubHal::setOperationMode(OperationMode mode) {
@@ -88,7 +98,7 @@ Return<Result> SensorsSubHal::initialize(const sp<IHalProxyCallback>& hal_proxy_
     return impl_->initialize(hal_proxy_callback);
 }
 
-}  // namespace qsh_wrapper
+}  // namespace ssc_wrapper
 }  // namespace implementation
 }  // namespace subhal
 }  // namespace V2_1
@@ -97,7 +107,7 @@ Return<Result> SensorsSubHal::initialize(const sp<IHalProxyCallback>& hal_proxy_
 }  // namespace android
 
 ISensorsSubHal* sensorsHalGetSubHal_2_1(uint32_t* version) {
-    static ::android::hardware::sensors::V2_1::subhal::implementation::qsh_wrapper::SensorsSubHal
+    static ::android::hardware::sensors::V2_1::subhal::implementation::ssc_wrapper::SensorsSubHal
             sub_hal;
     *version = SUB_HAL_2_1_VERSION;
     return &sub_hal;

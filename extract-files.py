@@ -89,6 +89,8 @@ blob_fixups: blob_fixups_user_type = {
      'odm/lib64/com.qti.feature2.anchorsync.so',
      'odm/lib64/camera/plugins/com.xiaomi.plugin.anchor.so'): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    'vendor/etc/sensors/hals.conf': blob_fixup()
+        .regex_replace('sensors.ssc.so', 'sensors.ssc_wrapper.so')
 }
 
 module = ExtractUtilsModule(

@@ -35,7 +35,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    sensors.qsh_wrapper
+    sensors.ssc_wrapper
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

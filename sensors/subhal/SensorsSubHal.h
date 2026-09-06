@@ -6,6 +6,8 @@
 #pragma once
 
 #include <V2_1/SubHal.h>
+#include <functional>
+#include <memory>
 
 namespace android {
 namespace hardware {
@@ -13,7 +15,7 @@ namespace sensors {
 namespace V2_1 {
 namespace subhal {
 namespace implementation {
-namespace qsh_wrapper {
+namespace ssc_wrapper {
 
 using ::android::hardware::sensors::V1_0::OperationMode;
 using ::android::hardware::sensors::V1_0::RateLevel;
@@ -48,10 +50,10 @@ class SensorsSubHal : public ISensorsSubHal {
 
   private:
     std::unique_ptr<void, std::function<void(void*)>> lib_handle_;
-    V2_1::implementation::ISensorsSubHal* impl_;
+    V2_1::implementation::ISensorsSubHal* impl_ = nullptr;
 };
 
-}  // namespace qsh_wrapper
+}  // namespace ssc_wrapper
 }  // namespace implementation
 }  // namespace subhal
 }  // namespace V2_1

@@ -5,7 +5,7 @@
 //
 
 cc_library_shared {
-    name: "sensors.qsh_wrapper",
+    name: "sensors.ssc_wrapper",
     defaults: ["hidl_defaults"],
     srcs: [
         "SensorsSubHal.cpp",
@@ -14,6 +14,7 @@ cc_library_shared {
         "android.hardware.sensors@2.0",
         "android.hardware.sensors@2.1",
         "libbase",
+        "libdl",
         "libhidlbase",
         "libutils",
     ],
@@ -21,7 +22,7 @@ cc_library_shared {
         "android.hardware.sensors@2.X-multihal.header",
     ],
     cflags: [
-        "-DLOG_TAG=\"sensors.qsh_wrapper\"",
+        "-DLOG_TAG=\"sensors.ssc_wrapper\"",
     ],
     vendor: true,
 }
